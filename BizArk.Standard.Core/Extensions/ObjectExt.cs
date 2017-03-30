@@ -1,0 +1,125 @@
+﻿using System;
+using System.ComponentModel;
+using System.Linq.Expressions;
+using BizArk.Standard.Core.Util;
+using System.Collections.Generic;
+using System.Reflection;
+
+namespace BizArk.Standard.Core.Extensions.ObjectExt
+{
+    /// <summary>
+    /// Extends the Object class.
+    /// </summary>
+    public static class ObjectExt
+    {
+        /// <summary>
+        /// Converts the value to the specified type. 
+        /// Checks for a TypeConverter, conversion methods, 
+        /// and the IConvertible interface. Uses <see cref="BizArk.Standard.Core.ConvertEx.To(object, Type, IFormatProvider)"/>.
+        /// </summary>
+        /// <typeparam name="T">The type to convert to.</typeparam>
+        /// <param name="obj">The value to convert from.</param>
+        /// <returns></returns>
+        /// <exception cref="System.InvalidCastException">This conversion is not supported. -or-value is null and conversionType is a value type.</exception>
+        /// <exception cref="System.ArgumentNullException">conversionType is null.</exception>
+        public static T To<T>(this object obj)
+        {
+            return ConvertEx.To<T>(obj);
+        }
+
+        /// <summary>
+        /// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static object GetValue(this object obj, string propertyName)
+        {
+			return ObjectUtil.GetValue(obj, propertyName);
+        }
+
+		/// <summary>
+		/// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+		/// </summary>
+		/// <param name="obj"></param>
+		/// <param name="propertyName"></param>
+		/// <returns></returns>
+		public static T GetValue<T>(this object obj, string propertyName)
+        {
+            return (T)GetValue(obj, propertyName);
+        }
+
+        /// <summary>
+        /// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static int GetInt(this object obj, string propertyName)
+        {
+            return GetValue<int>(obj, propertyName);
+        }
+
+        /// <summary>
+        /// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static string GetString(this object obj, string propertyName)
+        {
+            return GetValue<string>(obj, propertyName);
+        }
+
+        /// <summary>
+        /// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static bool GetBoolean(this object obj, string propertyName)
+        {
+            return GetValue<bool>(obj, propertyName);
+        }
+
+        /// <summary>
+        /// Gets the value for the given property name. Uses ObjectUtil.GetValue so you can use any propertyName that supports.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static decimal GetDecimal(this object obj, string propertyName)
+        {
+            return GetValue<decimal>(obj, propertyName);
+        }
+
+		/// <summary>
+		/// Gets a collection of name/value pairs based on the public properties of an object.
+		/// </summary>
+		/// <param name="obj"></param>
+		/// <returns></returns>
+		public static NameValue[] GetNameValues(this object obj)
+		{
+			var vals = obj as NameValue[];
+			if (vals != null) return vals;
+
+			var pairs = new List<NameValue>();
+
+			foreach (var prop in obj.GetType().GetRuntimeProperties())
+				pairs.Add(new NameValue(prop.Name, prop.GetValue(obj, null), prop.PropertyType));
+
+			return pairs.ToArray();
+		}
+
+		/// <summary>
+		/// Normalizes a large number of classes into a dictionary. Works with DataRow, IDataReader, IDictionary, or POCO.
+		/// </summary>
+		/// <param name="obj"></param>
+		/// <returns></returns>
+		public static IDictionary<string, object> ToPropertyBag(this object obj)
+		{
+			return ObjectUtil.ToPropertyBag(obj);
+		}
+
+	}
+}
