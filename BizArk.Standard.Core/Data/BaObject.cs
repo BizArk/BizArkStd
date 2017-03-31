@@ -13,7 +13,7 @@ namespace BizArk.Standard.Core.Data
 {
 
 	/// <summary>
-	/// An object that can be used as dynamic. Provides a property bag implementation as well as keeps track of what fields are modified for efficient updates.
+	/// Provides a property bag implementation as well as keeps track of what fields are modified for efficient updates.
 	/// </summary>
 	public class BaObject : IDictionary<string, object>, INotifyPropertyChanged
 	{

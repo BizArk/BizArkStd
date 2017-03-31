@@ -5,7 +5,13 @@
     <AssemblyName>BizArk.Standard.ConsoleApp</AssemblyName>
     <Company>BizArk</Company>
     <Authors>Brian Brewder</Authors>
-    <Product>BizArk Console Application</Product>
+    <Product>BizArk Console Application (.Net Standard)</Product>
+    <Description>A simple to use command-line parser. Use your own POCO objects, or inherit from BaseConsoleApp for enhanced console application support.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/BizArk/BizArkStd/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/BizArk/BizArkStd</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/BizArk/BizArkStd</RepositoryUrl>
+    <PackageTags>console command-line command-line-parser</PackageTags>
+    <PackageReleaseNotes />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

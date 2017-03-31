@@ -3,6 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
     <RootNamespace>BizArk.Standard.Core</RootNamespace>
+    <Authors>Brian Brewder</Authors>
+    <Company>BizArk</Company>
+    <Product>BizArk Core (.Net Standard)</Product>
+    <Description>Provides utilies for line-of-business applications. This includes a conversion library. extensions, and various other useful utilities.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/BizArk/BizArkStd/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/BizArk/BizArkStd</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/BizArk/BizArkStd</RepositoryUrl>
+    <PackageTags>convert type-conversion extensions utilities</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
