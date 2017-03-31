@@ -10,7 +10,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/BizArk/BizArkStd/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/BizArk/BizArkStd</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BizArk/BizArkStd</RepositoryUrl>
-    <PackageTags>console command-line command-line-parser</PackageTags>
+    <PackageTags>BizArk console command-line command-line-parser</PackageTags>
     <PackageReleaseNotes />
   </PropertyGroup>
 

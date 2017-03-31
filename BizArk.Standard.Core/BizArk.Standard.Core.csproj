@@ -10,7 +10,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/BizArk/BizArkStd/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/BizArk/BizArkStd</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BizArk/BizArkStd</RepositoryUrl>
-    <PackageTags>convert type-conversion extensions utilities</PackageTags>
+    <PackageTags>BizArk convert conversion type-conversion tools extension utility</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
