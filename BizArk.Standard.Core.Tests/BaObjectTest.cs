@@ -69,21 +69,6 @@ namespace BizArk.Standard.Core.Tests
 		}
 
 		[TestMethod]
-		public void CreateDynamicBaObject()
-		{
-			dynamic obj = new BaObject(false);
-			Assert.IsNull(obj.INVALID);
-			obj.VALID = 123;
-			Assert.AreEqual(123, obj.VALID);
-
-			obj = new BaObject(true, new { VALID = 0 });
-			string invalid; // Just needed to assign to.
-			AssertEx.Throws<RuntimeBinderException>(() => { invalid = obj.INVALID as string; });
-			obj.VALID = 123;
-			Assert.AreEqual(123, obj.VALID);
-		}
-
-		[TestMethod]
 		public void BaObjectChanges()
 		{
 			var obj = new BaObject(true, new { Name = "", Greeting = "" });

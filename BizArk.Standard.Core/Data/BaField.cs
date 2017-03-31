@@ -141,7 +141,7 @@ namespace BizArk.Standard.Core.Data
 				return;
 			}
 
-			if (!FieldType.GetType().GetTypeInfo().IsAssignableFrom(value.GetType()))
+			if (!FieldType.GetTypeInfo().IsAssignableFrom(value.GetType()))
 				throw new InvalidOperationException($"The {valName} for {Name} is not of the correct type. The type is {value.GetType().FullName}, expecting {FieldType.FullName}.");
 		}
 
