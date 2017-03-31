@@ -12,6 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BizArk.Standard.ConsoleApp\BizArk.Standard.ConsoleApp.csproj" />
     <ProjectReference Include="..\BizArk.Standard.Core\BizArk.Standard.Core.csproj" />
   </ItemGroup>
