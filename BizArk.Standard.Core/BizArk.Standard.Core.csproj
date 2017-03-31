@@ -14,6 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Mime.Types">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

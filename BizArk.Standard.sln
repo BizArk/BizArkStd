@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BizArk.Standard.Core", "Biz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BizArk.Standard.Core.Tests", "BizArk.Standard.Core.Tests\BizArk.Standard.Core.Tests.csproj", "{A12FADFC-1864-49E2-94DC-DCADA81BFF74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizArk.Standard.ConsoleApp", "BizArk.Standard.ConsoleApp\BizArk.Standard.ConsoleApp.csproj", "{DCC2BA9B-8152-482C-90CA-87BA95315431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizArk.Standard.ConsoleApp.Tests", "BizArk.Standard.ConsoleApp.Tests\BizArk.Standard.ConsoleApp.Tests.csproj", "{B215D41D-56AA-4EA6-A507-4104D7481B14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A12FADFC-1864-49E2-94DC-DCADA81BFF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A12FADFC-1864-49E2-94DC-DCADA81BFF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A12FADFC-1864-49E2-94DC-DCADA81BFF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC2BA9B-8152-482C-90CA-87BA95315431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC2BA9B-8152-482C-90CA-87BA95315431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC2BA9B-8152-482C-90CA-87BA95315431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC2BA9B-8152-482C-90CA-87BA95315431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using BizArk.Standard.Core.Util;
 using System.Collections.Generic;
 using System.Reflection;
+using System.ComponentModel.DataAnnotations;
 
 namespace BizArk.Standard.Core.Extensions.ObjectExt
 {
@@ -92,6 +93,18 @@ namespace BizArk.Standard.Core.Extensions.ObjectExt
         {
             return GetValue<decimal>(obj, propertyName);
         }
+
+		/// <summary>
+		/// Uses DataAnnotations to validate the properties of the object.
+		/// </summary>
+		/// <param name="obj"></param>
+		public static ValidationResult[] Validate(this object obj)
+		{
+			var ctx = new ValidationContext(obj, null, null);
+			var results = new List<ValidationResult>();
+			Validator.TryValidateObject(obj, ctx, results, true);
+			return results.ToArray();
+		}
 
 		/// <summary>
 		/// Gets a collection of name/value pairs based on the public properties of an object.
