@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageId>BizArk.Standard.ConsoleApp.Sample</PackageId>
+    <Authors>Brian Brewder</Authors>
+    <Company>BizArk</Company>
+    <Product>BaCon</Product>
+    <Description>Sample application for the .Net Standard version of BaCon (BizArk CONsole application).</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BizArk.Standard.ConsoleApp\BizArk.Standard.ConsoleApp.csproj" />
+    <ProjectReference Include="..\BizArk.Standard.Core\BizArk.Standard.Core.csproj" />
+  </ItemGroup>
+
+</Project>

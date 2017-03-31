@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizArk.Standard.ConsoleApp"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizArk.Standard.ConsoleApp.Tests", "BizArk.Standard.ConsoleApp.Tests\BizArk.Standard.ConsoleApp.Tests.csproj", "{B215D41D-56AA-4EA6-A507-4104D7481B14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizArk.Standard.ConsoleApp.Sample", "BizArk.Standard.ConsoleApp.Sample\BizArk.Standard.ConsoleApp.Sample.csproj", "{F92DD0EC-00B6-49D1-9105-76F4FCED343F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B215D41D-56AA-4EA6-A507-4104D7481B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92DD0EC-00B6-49D1-9105-76F4FCED343F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92DD0EC-00B6-49D1-9105-76F4FCED343F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92DD0EC-00B6-49D1-9105-76F4FCED343F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92DD0EC-00B6-49D1-9105-76F4FCED343F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
